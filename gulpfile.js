@@ -52,7 +52,7 @@ gulp.task('css-libs', ['sass'], function() {
 gulp.task('scripts', function() {
     return gulp.src([ // Берем все необходимые библиотеки
         'app/libs/jquery/dist/jquery.min.js', // Берем jQuery
-        'app/libs/jquery-maskedinput/src/jquery.maskedinput.js'
+        'app/libs/jquery.maskedinput/dist/jquery.maskedinput.min.js'
     ])
         .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
         .pipe(uglify()) // Сжимаем JS файл
