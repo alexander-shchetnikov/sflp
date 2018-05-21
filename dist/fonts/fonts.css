@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "PT Sans Caption";
+    font-weight: 900;
+    src: url(PT_Sans_Caption/PT_Sans-Caption-Web-Bold.ttf) format('truetype');
+}
+@font-face {
+    font-family: "PT Sans Caption";
+    font-weight: 300;
+    src: url(PT_Sans_Caption/PT_Sans-Caption-Web-Regular.ttf) format('truetype');
+}
