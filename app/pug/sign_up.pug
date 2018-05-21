@@ -1,0 +1,31 @@
+extends layouts/main
+
+block variables
+    -
+        var title = "Заявка на участие"
+        var page = "sign_up"
+block content
+    .content__row.container
+        .container__header
+            h2.container__h2= title
+        form.container__body.form
+            .form__container.form__container--v.form__container--center
+                .input__container
+                    label.input__label Фамилия
+                    input.input.input__text(type="text",name="s_name",placeholder="-",required)
+                .input__container
+                    label.input__label Имя
+                    input.input.input__text(type="text",name="f_name",placeholder="-",required)
+                .input__container
+                    label.input__label Отчество
+                    input.input.input__text(type="text",name="m_name",placeholder="-",required)
+                .input__container
+                    label.input__label Номер телефон
+                    input.input.input__text#phone(type="text",placeholder="+7 (___) ___ __-__",required)
+                .input__container
+                    label.input__label Электронная почта
+                    input.input.input__text(type="email",placeholder="-",required)
+            .form__container.form__container--v.form__container--center
+                button.main-menu__list-button.list__item-button.button.button--red Отправить заявку
+            
+        

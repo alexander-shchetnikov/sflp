@@ -1,0 +1,30 @@
+doctype html
+
+block variables
+    -
+        var title
+        var page
+
+
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/main.css")
+        link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.2/css/all.css")
+        script(defer,src="https://use.fontawesome.com/releases/v5.0.2/js/all.js")
+        script(defer,src="js/libs.min.js")
+        title= title
+    body
+        .wrapper
+            .wrapper__header
+                .content
+                    include ../layouts/header
+            .wrapper__body
+                .content
+                    block content
+            .wrapper__footer
+                .content
+                    include ../layouts/footer
+        script(defer,src="js/script.js")
+

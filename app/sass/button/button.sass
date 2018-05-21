@@ -1,0 +1,19 @@
+.button
+  display: inline-block
+  font-size: 14px
+  padding: 8px 15px
+  border-radius: 5px
+  line-height: 18px
+  transition: 0.230s
+  transition-property: border-color,box-shadow,background
+  &:hover
+    cursor: pointer
+  &--red
+    background: $red
+    border: 1px solid darken($red,10)
+    color: #FFFFFF
+    &:hover
+      background: darken($red,10)
+      box-shadow: 0px 0px 0px 2px transparentize($red,0.6)
+
+

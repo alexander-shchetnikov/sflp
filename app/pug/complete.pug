@@ -1,0 +1,14 @@
+extends layouts/main
+
+block variables
+    -
+        var title = "Заявка на участие"
+        var page = "complete"
+block content
+    .content__row.container
+        .notify
+            .notify__container.notify__container--success
+                .notify__header
+                    h4.notify__h4.notify__h4--success Ваша заявка была отправлена
+                .notify__body
+                    p.notify__p Спасибо за участие

@@ -1,0 +1,36 @@
+block header_var
+    -
+        var mainMenuList = [ 
+                {name:"О мероприятии",href:"about"},
+                {name:"Программа курса",href:"courses"},
+                {name:"Расписание занятий",href:"rasp"},
+                {name:"Подать заявку",href:"sign_up",type:"button"}
+            ]
+
+.content__container
+    .content__row
+        .header.content__main
+            .logo
+                .logo__container
+                    img.logo__left_bg.logo__bg(src="/img/left_logo_bg.svg")
+                    .logo__shell
+                        .logo__img-shell
+                            img(src="/img/logo_kemsu.svg").logo__img
+                        .logo__text-shell
+                            h3.logo__h3 Кемеровский государственный университет
+                            h1.logo__h1 Школа финансовой грамотности пенсионеров 2.0
+                    img.logo__right_bg.logo__bg(src="/img/right_logo_bg.svg")
+            .main-menu
+                .main-menu__container
+                    ul.main-menu__list.list.list--h.list--center
+                        for item in mainMenuList
+                            li.main-menu__list-item.list__item.list__item--h
+                                if !(item.type == "button")
+                                    if item.href == page
+                                        a.main-menu__list-link.main-menu__list-link--active.list__item-link= item.name
+                                    else
+                                        a.main-menu__list-link.list__item-link(href="/"+item.href+".html")= item.name
+                                else
+                                    a.main-menu__list-button.list__item-button.button.button--red(href="/"+item.href+".html")= item.name
+                            
+                                    

@@ -1,0 +1,16 @@
+.input
+    font-size: 14px
+    width: 300px
+    box-sizing: border-box
+    padding: 6px 15px
+    border-radius: 5px
+    border: 1px solid transparentize($black,0.75)
+    transition: 0.23s
+    transition-property: border,box-shadow
+    &:focus,&:hover
+        border: 1px solid $red
+    &:focus
+        box-shadow: 0px 0px 0px 2px transparentize($red,0.6)
+    @import "_text"
+    @import "_label"
+    @import "_container"

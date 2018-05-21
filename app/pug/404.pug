@@ -1,0 +1,14 @@
+extends layouts/main
+
+block variables
+    -
+        var title = "404 Страница не найдена"
+        var page = "404"
+block content
+    .content__row.container
+        .notify
+            .notify__container.notify__container--error
+                .notify__header
+                    h4.notify__h4.notify__h4--error Ошибка 404
+                .notify__body
+                    p.notify__p Страница не найдена
