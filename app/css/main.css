@@ -210,6 +210,12 @@ p, input {
   .list__item--h:last-child {
     margin-right: 0px; }
 
+.main-menu__list {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: -15px 0px; }
+
 .main-menu__list-link {
   font-size: 15px;
   color: #2B2B2B;
@@ -226,6 +232,9 @@ p, input {
     color: #E63244;
     font-weight: 900;
     cursor: default !important; }
+
+.main-menu__list-item {
+  margin: 15px 30px 15px 0px; }
 
 .logo__container {
   display: -webkit-box;
