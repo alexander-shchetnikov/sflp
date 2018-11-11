@@ -1,0 +1,26 @@
+.file
+    font-size: 14px
+    border-radius: 5px
+    border: 1px solid transparentize($black,0.85)
+    box-shadow: 0px 0px 20px transparentize($black,1)
+    transition: 0.13s
+    transition-property: border,box-shadow,transform
+    & > a
+        // font-weight: 600
+        display: flex
+        padding: 15px 30px
+        color: $black
+        align-items: center
+        &:before
+            display: block
+            position: relative
+            width: 20px
+            height: 20px
+            background: url('/img/download.png') no-repeat
+            background-size: contain
+            margin-right: 10px
+            content: ''
+    &:hover
+        border: 1px solid $red
+        box-shadow: 0px 0px 20px transparentize($red,0.75)
+        transform: scale(1.05)

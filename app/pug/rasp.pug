@@ -4,10 +4,19 @@ block variables
     -
         var title = "Расписание занятий"
         var page = "rasp"
+        var files = [
+            {name: 'Расписание 14.05 - 25.05',src:'./public/rasp-14.05-25.05.docx'},
+            {name: 'Расписание 04.06 - 19.06',src:'./public/rasp-04.06-19.06.docx'},
+            {name: 'Расписание 18.06 - 29.06',src:'./public/rasp-18.06-29.06.docx'},
+            {name: 'Расписание 17.08 - 05.10',src:'./public/rasp-17.08-05.10.docx'}
+        ]
+
 block content
     .content__row.container
         .container__header
             h2.container__h2= title
         .container__body
-            p.container__p
-                | Страница в разработке
+            .container__files.container__files--center.list
+                for file in files
+                    .file.list__item--v
+                        a(href=file.src,download)=file.name
